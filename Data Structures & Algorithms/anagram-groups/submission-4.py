@@ -1,0 +1,9 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        newarray = []
+        for i in range(len(strs)):
+            for j in range(i+1, len(strs)):
+                if sorted(strs[i]) == sorted(strs[i+1]):
+                    newarray[i].append([strs[i], strs[i+1]]) 
+                
+        return newarray
