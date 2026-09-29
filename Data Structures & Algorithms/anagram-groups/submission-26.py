@@ -18,12 +18,12 @@ class Solution:
                 counter += 1
                 
         
-        actual_list = [[] for _ in range(counter)]
+        actuall_list = [[] for _ in range(counter)]
         for i, word in enumerate(new_list):
             group = hashy[word]
-            actual_list[hashy[word]].append(strs[i])
+            actuall_list[hashy[word]].append(strs[i])
 
-        return actual_list
+        return actuall_list
             
 
 
